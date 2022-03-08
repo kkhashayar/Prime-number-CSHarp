@@ -1,12 +1,6 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
 static void IsPrime(int number){
-
     
 try{
-
-
     if(number != 0){
         if(number % 2 == 1){
             Console.WriteLine("Number {0} is Prime", number);
@@ -22,6 +16,7 @@ try{
     Console.WriteLine(Err.ToString());
 }
 }
-
-IsPrime(-1);
-
+Console.Clear(); 
+for(int i = 0; i<200; i++){
+    IsPrime(i);
+}
